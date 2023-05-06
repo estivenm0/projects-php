@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+body{
+    background-color: #0f0e17;
+}
+
+.photos{
+    justify-content: center;    max-width: 100%;
+}
+
+.photos, .pagination, .Form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tumb{
+    margin: 1rem;
+  
+    /* overflow: hidden; */
+}
+.tumb>a{
+    display: block;
+    height: 140px;
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+.tumb>a>img{
+    margin: auto;
+    max-width: 100%;
+    border-radius: 1rem;
+    max-height: 100%;
+    
+    display: block;
+    
+}
+
+.pagination{
+    justify-content: space-around;
+}
+
+.pagination>a{
+    text-decoration: none;
+    background-color: #1c1a2b;
+    padding: .5rem 1.5rem;
+    border: 1px solid rgba(245, 222, 179, 0.486);
+    border-radius: 10px;
+}
+
+.tumb>a:hover{
+    transition: all .3s ease-out;
+    transform: scale(1.1);
+}
+
+.pagination>a:hover , .tumb>a:hover{
+    border: 1px solid white;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #1c1a2b79;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.container>div>img{
+    max-width: 50%;
+    min-width: 200px;
+}
+
+.Form{
+    max-width: 500px;
+    padding: .5rem;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form>input, textarea{
+    font-size: 1.2rem;
+    color: #0f0e17;
+    font-weight: 700;
+    width: 70%;
+    max-width: 100%;
+    padding: .2rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;   
+    cursor: pointer;
+}
+
+.Form>label{
+    font-weight: 600;
+    color: rgb(160, 134, 103);
+}
+
+input[type="submit"]{
+    background-color: rgb(228, 199, 162);
+}
+input[type="submit"]:hover{
+    background-color: rgb(155, 133, 105);
+}
+
+
+input[type="file"]{
+    color: aliceblue;
+}
+
